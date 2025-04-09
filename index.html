@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeetCode Metric</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>LeetCode Metric</h1>
+        <div class="user-container">
+            <label for="username" id="username-label">Enter your Username below:</label>
+            <div class="user-search">
+                <input type="text" placeholder="username..." id="username">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="progress-circles">
+                <div class="progress-status">
+                    <h3 id="easy-color">Easy</h3>
+                    <span id="easy-score">--</span>
+                </div>
+            </div>
+            <div class="progress-circles">
+                <div class="progress-status">
+                    <h3 id="medium-color">Medium</h3>
+                    <span id="medium-score">--</span>
+                </div>
+            </div>
+            <div class="progress-circles">
+                <div class="progress-status">
+                    <h3 id="hard-color">Hard</h3>
+                    <span id="hard-score">--</span>
+                </div>
+            </div>
+
+            
+            <canvas id="leetcodeChart" width="300" height="300"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
